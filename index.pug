@@ -1,0 +1,76 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Dance_Website
+        style
+            include ../static/style.css
+        <link rel="stylesheet" media="screen and (max-width: 706px)" href="../static/phone.css">    
+        
+    body 
+        header
+            nav.top#navbar 
+                div.container#logo 
+                    img(src="/static/img/logo.jpg", alt="alt") 
+
+                ul
+                    li #[a(href="/") Home]
+                    li #[a(href="/#intro") About Us] 
+                    li #[a(href="/#sponsers") Services]
+                    li #[a(href="/") Contact Us] 
+                    li #[a(href="/#mission") Class Info] 
+
+                div.Buttons 
+                    input(type="button", value="Sign Up" id="btn1" class="btn")
+
+        section#intro 
+              div Welcome to Mayank's Dance Academy, where passion meets precision in every step. Our vibrant community, led by the skilled Mayank, offers diverse dance styles for all levels. Join us on a journey of self-expression, rhythm, and joy.
+
+              div Join us on this exhilarating journey of self-discovery through dance. Mayank's Dance Academy is not just a place to learn; it's a space to express, connect, and embrace the transformative power of movement.
+
+              div.small Eat Sleep Dance Repeat
+
+        section#mission 
+            h2   Our Mission
+            div.MCards
+                div.card 
+                    h3 Inspire Passion
+                    div.card-box
+                        div.card-img
+                            img(src="/static/img/1.png", alt="img-1")
+
+                        div.card-content
+                            p Passion for dance is supported. 
+
+                div.card 
+                    h3 Promote Diversity
+                    div.card-box
+                        div.card-img
+                            img(src="/static/img/2.png", alt="img-2")
+                        div.card-content
+                            p Promoting diversity in styles.
+
+                div.card 
+                    h3 Expert Teaching
+                    div.card-box
+                        div.card-img
+                            img(src="/static/img/3.png", alt="img-3")
+                        div.card-content
+                            p Best mentors for teaching.
+
+        section#sponsers 
+            h2   Our Sponsers
+            div#sponsors
+                img(src="/static/img/logo1.png", alt="sponsers image-1",class="spimg")
+                img(src="/static/img/logo2.png", alt="sponsers image-2",class="spimg")
+                img(src="/static/img/logo3.png", alt="sponsers image-3",class="spimg")
+                img(src="/static/img/logo4.png", alt="sponsers image-4",class="spimg")
+
+        footer#foot 
+             div copyright &copy; 2023 MayankDanceAcademy.com All Rights Reserved
+
+        scripts 
+            include ../static/index.js
+        
+            

@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css")
+    link(rel="stylesheet", href="/static/login.css")
+    title Login
+  body
+    #container.container
+      .form-container.sign-up
+        form
+          h1 Create Account
+          .social-icons
+            a(href="#" class="icon") 
+            a(href="#" class="icon") 
+            a(href="#" class="icon") 
+            a(href="#" class="icon") 
+          span or use your email for registration
+          input(type="text", placeholder="Name" required)
+          input(type="email", placeholder="Email" required)
+          input(type="password", placeholder="Password" required)
+          button Sign Up
+      .form-container.sign-in
+        form
+          h1 Sign In
+          .social-icons
+            a(href="#" class="icon") 
+            a(href="#" class="icon") 
+            a(href="#" class="icon") 
+            a(href="#" class="icon") 
+          span or use your email password
+          input(type="email", placeholder="Email" required)
+          input(type="password", placeholder="Password" required)
+          button Sign In
+      .toggle-container
+        .toggle
+          .toggle-panel.toggle-left
+            h1 Welcome Back!
+            p Enter your personal details so we can recognise you.
+            button.hidden#login Sign In
+          .toggle-panel.toggle-right
+            h1 Hello, User!
+            p Register with your personal details to enroll with us.
+            button.hidden#register Sign Up
+
+    script(src="/static/index.js")

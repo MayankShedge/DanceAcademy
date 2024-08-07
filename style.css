@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200&family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Merriweather&family=Teko:wght@300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    padding: 15px 5px;
+    font-family: 'Baloo Bhai', cursive; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#logo img{
+    width: 86px;
+    height: 87px;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    padding: 9px 17px;
+    color: white;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover{
+    color: black;
+}
+
+#navbar .Buttons #btn1{
+    background-color: white;
+    color: black;
+    outline: none;
+    border: 1.8px solid black;
+    font-family: 'Baloo Bhai', cursive;
+    border-radius: 9px;
+    padding: 6px 6px;
+    transition: all ease 0.5s;
+}
+
+#navbar .Buttons #btn1:hover{
+    background-color: rgb(46, 240, 244);
+    color: white;
+    cursor: pointer;
+}
+
+#navbar .Buttons #btn1:active{
+    scale: 0.9;
+}
+
+#intro{
+    height: 450px;
+    font-family: 'Bree Serif', serif;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#intro div{
+    padding: 17px 370px;
+}
+
+#intro .small{
+    font-size: 27px;
+    font-weight: bolder;
+    margin-top: 8px;
+    color: rgb(255, 0, 0);
+    font-family: 'Teko', sans-serif;
+}
+
+#intro::before{
+    content: "";
+    background: url('/static/img/Intro.jpg')no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#mission{
+    height: 325px;
+    margin-top: 150px;
+    font-family: 'Baloo Bhai', cursive; 
+}
+
+#mission::before{
+    content: "";
+    background: url('/static/img/Mission.jpg')no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 58%;
+    left: 0px;
+    top: 729px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#mission .MCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#mission h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+    padding-top: 10px;
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+
+#mission .card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 22%;
+    display: inline-block;
+    margin: 23px 15px;
+    height: 209px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder !important;
+}
+
+#mission .card h3{
+    text-align: center;
+    margin-top: 23px;
+    font-family: 'Anton', sans-serif !important;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img{
+    height: 120px;
+    padding: 0px 14px;
+    margin: 7px 8px;
+}
+
+.card-img img{
+    height: inherit;
+}
+
+#sponsers{
+    height: 300px;
+    background-color: aliceblue;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Bree Serif', serif;
+}
+
+#sponsers h2{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    padding-top: 10px;
+    font-family: 'Merriweather', serif;
+    font-size: 32px;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+#sponsors{
+    height: 191px;
+    max-width: 1000px;
+    margin: 27px auto;
+}
+
+.spimg{
+    height: 80%;
+    margin: 20px;
+    padding: 20px 25px;
+}
+
+#foot{
+    height: 38px;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

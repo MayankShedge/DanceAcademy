@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title Mayank Dance Academy 
+    block scripts
+    block style
+  body
+      header
+          nav.top#navbar 
+              div.container#logo 
+                  img(src="/static/img/logo.jpg", alt="alt") 
+
+              ul
+                  li #[a(href="/") Home]
+                  li #[a(href="/#intro") About Us] 
+                  li #[a(href="/#sponsers") Services]
+                  li #[a(href="/contact") Contact Us] 
+                  li #[a(href="/#mission") Class Info] 
+
+              div.Buttons
+                  a(href="/login") 
+                    input(type="button", value="Sign Up", id="btn1", class="btn")
+  block content
+  footer#foot 
+             div copyright &copy; 2023 MayankDanceAcademy.com All Rights Reserved
